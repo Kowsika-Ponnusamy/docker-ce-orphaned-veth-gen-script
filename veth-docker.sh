@@ -10,7 +10,7 @@ case "$choice" in
   * ) exit 1;;
 esac
 echo
-echo "it may take some time. You may take a cup of caffe"
+echo "it may take some time. You may take a cup of tea"
 echo
 echo
 echo
