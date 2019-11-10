@@ -46,10 +46,10 @@ while : ; do
     # remove all containers
     docker ps -a | cut -f1 -d " " | grep -v CONTAINER | xargs -n1 docker rm --force > /dev/null
     sleep 1
-    # just for sure
+    # just to be sure
     docker ps -a | cut -f1 -d " " | grep -v CONTAINER | xargs -n1 docker rm --force > /dev/null
 
-    # check if we still have orphaned interfaces
+    # check if we have orphaned interfaces
     ls /sys/class/net | grep veth && break
 done
 
